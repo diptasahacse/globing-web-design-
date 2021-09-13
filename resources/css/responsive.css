@@ -1,0 +1,74 @@
+@media only screen and (max-width:1200px){
+    .row{
+    margin: 0 2rem;
+    }
+}
+@media only screen and (max-width:1094px){
+    nav .small-contact-area {
+    display: none;
+    }
+    nav .menu-area {
+    float: right;
+    }
+    
+}
+
+@media only screen and (max-width:980px){
+    html, body {
+    font-size: 58.5%;
+    }
+    .grid-touch-container {
+    grid-template-columns: 1fr;
+    
+    }
+    .touch-container-item:first-child {
+        text-align: center;
+    }
+    .grid-service-section {
+    grid-template-columns: repeat(2 , 1fr);
+    }
+    
+}
+@media only screen and (max-width:777px){
+    nav .menu-area{
+        display: none;
+    }
+    .grid-team-container ,
+    .grid-price-container{
+    grid-template-columns: repeat(1,1fr);
+    
+    }
+}
+@media only screen and (max-width:768px){
+    .grid-service-section ,
+    .grid-features-container{
+        grid-template-columns: repeat(1 , 1fr);
+        grid-gap: 5rem;
+    }
+
+    .grid-service-section-item {
+    text-align: center;
+}
+    .grid-features-item:nth-child(2), .grid-features-item:nth-child(3) {
+    padding-right: 0rem;
+        text-align: center;
+}
+    
+}
+@media only screen and (max-width:600px){
+    .grid-support-container {
+    grid-template-columns: repeat(1,1fr);
+    
+}
+    .grid-support-item{
+        text-align: center;
+    }
+    form .name-email .name, form .name-email .email {
+    width: 100%;
+
+    }
+    
+}
+@media only screen and (max-width:1200px){
+    
+}

@@ -1,0 +1,611 @@
+/*===================================================
+Template Name: Example
+Template URI: https://www.diptasaha.com/projects/
+Author: Dipta Saha
+Author URI: https://www.diptasaha.com
+Version: 1.0
+Description: An Awesome Personal portfolio template.
+Support: diptasoftwaresolution@gmail.com
+====================================================*/
+
+
+/*===================================================
+CSS INDEX
+----------
+1. Google Fonts
+2. Common CSS
+3. Reusable Components
+
+
+
+
+====================================================*/
+
+/* 1. Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
+
+/* 2. Common CSS */
+*{
+    margin: 0;
+    padding: 0;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+html, body {
+    color: #000;
+    background: #fff;
+    font-size: 62.5%;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    font-family: 'Mulish', sans-serif;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+h1{
+    
+    
+}
+h2{
+    
+}
+h3{
+    
+}
+h4{
+    
+}
+a:link,
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+p{
+    font-size: 1.6rem;
+}
+hr{
+    border: 0;
+    border-top: .1rem solid #808080;
+    
+}
+
+
+/* 3. Reusable Components */
+.row{
+    max-width: 112rem;
+    margin: auto;
+}
+section,footer{
+    padding: 8rem 0;
+}
+
+.section-header-area{
+    text-align: center;
+    
+}
+.section-icon ion-icon{
+    font-size: 3rem;
+    color: #6C757D;
+}
+.section-title span{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    margin: 1.5rem 0;
+    display: inline-block;
+    
+}
+.section-title h2{
+    display: inline-block;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.section-title p{
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    color: #6c757d;
+}
+.btn{
+    font-size: 1.6rem;
+    background: #000;
+    display: inline-block;
+    border: .2rem solid transparent;
+    padding: 1.7rem 0;
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+    transition: .6s;
+    cursor:pointer;
+}
+.clear-fix::after{
+    content: '';
+    display: table;
+    clear: both;
+    
+    
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+
+/* 4. Header Part */
+#header{
+    height: 100vh;
+    background: url(img/headerbac.png);
+    overflow: hidden;
+    position: relative;
+}
+nav{
+    margin-top: 2.5rem;
+    
+}
+nav .logo-area{
+    width: 20%;
+}
+nav .logo-area a{
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+}
+nav .menu-area{
+    
+}
+nav .menu-area ul{
+    
+}
+nav .menu-area ul li{
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 1.4rem;
+    
+    
+}
+nav .menu-area ul li:last-child{
+    margin-right: 0rem;
+}
+nav .menu-area ul li a{
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 0 1rem;
+    letter-spacing: .1rem;
+    line-height: 2;
+}
+
+nav .small-contact-area{
+    width: 20%;
+}
+nav .small-contact-area .phn-number-area{
+    
+}
+nav .small-contact-area .phn-number-area .phn-logo{
+    
+}
+nav .small-contact-area .phn-number-area .phn-logo ion-icon{
+    font-size: 2rem;
+    color: #fff;
+    margin-top: 0.3rem;
+}
+nav .small-contact-area .phn-number-area .phn-number{
+    
+}
+
+nav .small-contact-area .phn-number-area .phn-number span{
+    font-size: 1.3rem;
+    color: #fff;
+    line-height: 2;
+    
+}
+nav .small-contact-area .facebook-area a{
+    font-size: 2.5rem;
+    color: #fff;
+    display: inline-block;
+    
+    margin-left: 2rem;
+}
+nav.uk-active{
+    background: #1A1A1A;
+    margin: 0;
+    padding: 0;
+    padding: 2rem 0;
+}
+.hero-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 68%;
+    text-align: center;
+    color: #fff;
+}
+.hero-text h1{
+    font-size: 3.8rem;
+    line-height: 1.4;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    color: #fff;
+}
+.hero-text p{
+    width: 60%;
+    margin: 2.5rem auto;
+    color: #6C757D;
+    line-height: 2;
+}
+.hero-btn{
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    padding: 1.3rem 3rem;
+    background: transparent;
+    border-color: #fff;
+    border-radius: 3rem;
+    font-weight: 600;
+    
+}
+.hero-btn:hover{
+    background: #fff;
+    color: #000;
+}
+/* 4. Service Section */
+#service-section{
+    
+}
+.grid-service-section{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-gap: 11rem;
+    margin-top: 8rem;
+}
+.grid-service-section-item{
+    padding-right: 0rem;
+}
+.grid-service-section-item ion-icon{
+    color: #ff546c;
+    font-size: 4rem;
+    
+}
+.grid-service-section-item h3{
+    font-size: 1.8rem;
+    margin: 1.5rem 0;
+    font-weight: 700;
+}
+.grid-service-section-item p{
+    font-size: 1.4rem;
+    color: #6C757D;
+    line-height: 2rem;
+}
+
+/* 4. Features Section */
+#features{
+    background: #FAFBFE;
+}
+.grid-features-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 8rem;
+    margin-top: 6rem;
+}
+.grid-features-item:nth-child(1),
+.grid-features-item:nth-child(4){
+    text-align: center;
+}
+.grid-features-item:nth-child(2) h3,
+.grid-features-item:nth-child(3) h3{
+    font-size: 2.8rem;
+    line-height: 1.3;
+    font-weight: 600;
+    
+}
+.grid-features-item:nth-child(2) p,
+.grid-features-item:nth-child(3) p{
+    color: #6c757d;
+    margin: 2rem 0;
+    
+}
+.grid-features-item:nth-child(2),
+.grid-features-item:nth-child(3) 
+{
+    padding-right: 4.2rem;
+}
+.features-btn{
+    font-size: 1.4rem;
+    padding: 0;
+    background: #FF546C;
+    text-transform: uppercase;
+    padding: 1.3rem 2.5rem;
+    border-radius: 5rem;
+}
+/* 4. Team Section */
+#team-section{
+    background-color: #FAFBFE;
+}
+
+
+.grid-team-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+    margin-top: 6rem;
+}
+.grid-team-item{
+    text-align: center;
+    background: #fff;
+    padding: 5rem;
+}
+.grid-team-item .team-photo img{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+}
+.grid-team-item h4{
+    font-size: 1.7rem;
+    margin: 2rem 0;
+    font-weight: 600;
+}
+.grid-team-item p{
+    color: #6c757d;
+}
+.grid-team-item ul{
+    margin-top: 2rem;
+}
+.grid-team-item ul li{
+    display: inline-block;
+}
+.grid-team-item ul li{
+    margin-right: 1rem;
+}
+.grid-team-item ul li:last-child{
+    margin-right: 0rem;
+}
+.grid-team-item ul li a{
+    font-size: 2rem;
+    
+    
+}
+.grid-team-item ul li a ion-icon{
+    border: .01rem solid #f1f1f1;
+    padding: 1rem;
+    border-radius: 50%;
+    color: #808083;
+    transition: 1s;
+}
+.grid-team-item ul li:hover a ion-icon{
+    background: #FF546C;
+    color: #fff;
+    
+}
+
+/* 4. Support Section */
+
+
+
+
+.grid-support-container{
+    margin-top: 6rem;
+    grid-template-columns: repeat(2,1fr);
+    display: grid;
+    grid-gap: 3rem;
+    
+}
+.grid-support-item h4{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+.grid-support-item p{
+    color: #6c757d;
+}
+.contact-area{
+    margin-top: 15rem;
+    text-align: center;
+    
+}
+.contact-area h3{
+    font-size: 3rem;
+    font-weight: 500;
+}
+.contact-btn{
+    padding: 0;
+    color: #fff;
+    background: #FF546C;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    border-radius: 5rem;
+    font-size: 1.4rem;
+    
+}
+
+/* 4. Price Section */
+#price-section{
+    background-color: #FAFBFE;
+}
+.grid-price-container{
+    display: grid;
+    margin-top: 5rem;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(3,1fr);
+}
+.grid-price-item{
+    text-align: center;
+    background: #FFFFFF;
+    padding: 4rem 6rem;
+}
+.grid-price-item h2{
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+.pre-month{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.price-details{
+    text-align: center;
+    margin: 5rem 0;
+}
+.price-details span{
+    display: block;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    color: #6c757d;
+}
+.price-details span p{
+    color: #FF546C;
+    display: inline-block;
+    margin: 0;
+}
+.grid-price-item .btn{
+    margin-top: 0;
+    font-weight: 700;
+}
+/* 4. Touch Section */
+#touch-section{
+    background: #FFFFFF;
+}
+.grid-touch-container{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 3rem;
+    
+}
+.touch-container-item:first-child{
+    
+}
+.touch-container-item:first-child h3{
+    color: #6c757d;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: .6rem;
+}
+.touch-container-item:first-child span{
+    color: #6c757d;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    display: block;
+}
+.touch-container-item:last-child{
+    
+}
+.touch-container-item:last-child form{
+    font-size: 1.6rem;
+}
+form input{
+    
+}
+form .name-email .name,
+form .name-email .email
+{
+    width: 48.3%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: .1rem solid #e0e0e0;
+    border-radius: .5rem;
+    transition: .5s;
+    
+}
+form .name-email .name:hover,
+form .name-email .email:hover
+{
+    border: .1rem solid #FF546C;
+}
+form .name-email .name{
+    float: left;
+}
+form .name-email .email{
+    float: right;
+}
+
+form input[type="text"],
+form textarea{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: .1rem solid #e0e0e0;
+    border-radius: .5rem;
+    transition: .5s;
+    
+}
+form input[type="text"]:hover,
+form textarea:hover{
+    border: .1rem solid #FF546C;
+}
+form textarea{
+    height: 20rem;
+}
+.submit-button{
+    text-align: right;
+}
+/* 4. Touch Section */
+#footer-section{
+    background: url(img/headerbac.png);
+    
+}
+.footer-area{
+    text-align: center;
+}
+.social-icon li{
+    display: inline-block;
+    margin-right: 2rem;
+}
+.social-icon li:last-child{
+    margin-right: 0rem;
+}
+.social-icon li a{
+    font-size: 2rem;
+}
+.social-icon li a ion-icon{
+    color: #6C757D;
+    padding: 1rem;
+    border: .1rem solid #6C757D;
+    border-radius: 50%;
+}
+.footer-menu{
+    margin: 3rem 0;
+}
+.footer-menu li{
+    display: inline-block;
+    border-right: .2rem solid #6C757D;
+    padding: 0 1rem;
+}
+.footer-menu li:last-child{
+    border-right: 0;
+}
+.footer-menu li a{
+    font-size: 1.5rem;
+    color: #6C757D;
+}
+.footer-area p{
+    color: #fff;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
